@@ -1,0 +1,9 @@
+
+ 
+<h3>Favorite</h3> 
+<div *ngFor="#artist of searchMix| async" style="clear:both;">
+  <p>{{artist.name}}</p>
+  <div *ngFor="#img of artist.images" style="float:left;">
+    <img src="{{img.url}}" style="height:50px;"/>
+  </div>  
+</div>
